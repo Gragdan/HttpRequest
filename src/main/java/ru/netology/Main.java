@@ -20,7 +20,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        
+
         CloseableHttpClient httpClient = HttpClientBuilder.create()
                 .setDefaultRequestConfig(RequestConfig.custom()
                         .setConnectTimeout(5000)    // максимальное время ожидание подключения к серверу
@@ -63,7 +63,7 @@ public class Main {
         for (int i = 0; i < fromServers.size(); i++) {
             Integer myInt = fromServers.get(i).getUpvotes();
             if (myInt > 0 && myInt != null) {
-                System.out.println(fromServers.get(i).toString());
+                System.out.println(i+1 + " " + fromServers.get(i).toString());
             }
         }
 

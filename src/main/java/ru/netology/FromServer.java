@@ -45,7 +45,7 @@ public class FromServer {
 
     @Override
     public String toString(){
-       return  "DataCats" +
+       return  "CatFact" +
                "\n id = " + id +
                "\n text = " + text +
                "\n type = " + type +
